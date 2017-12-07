@@ -6,6 +6,10 @@
   "scripts": {
     "test": "test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bin1357/chunked_singly_linked_list.git"
+  },
   "keywords": [
     "chunked",
     "list",
