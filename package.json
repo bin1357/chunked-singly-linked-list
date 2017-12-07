@@ -1,0 +1,16 @@
+{
+  "name": "chunked_singly_linked_list",
+  "version": "1.0.0",
+  "description": "Chunked single linked list (Queue)",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "keywords": [
+    "chunked",
+    "list",
+    "queue"
+  ],
+  "author": "bin1357",
+  "license": "ISC"
+}
