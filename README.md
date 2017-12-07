@@ -1,4 +1,4 @@
-# chunked_singly_linked_list
+# chunked-singly-linked-list
 Chunked single linked list (Queue)
 ```javascript
 /*
