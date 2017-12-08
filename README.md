@@ -1,5 +1,12 @@
 # chunked-singly-linked-list
 Chunked single linked list (Queue)
+
+## Install
+```bash
+npm install --save chunked-singly-linked-list
+```
+
+## Example
 ```javascript
 /*
     chunk  ->   chunk  ->   chunk
@@ -8,10 +15,10 @@ Chunked single linked list (Queue)
        ↑                     ↑
      head                    tail
 */
-let MyQueue = require('./index');
+let Queue = require('chunked-singly-linked-list');
 
 // 4 - chunk size;
-let q = MyQueue.create(4);
+let q = Queue.create(4);
 
 q.push(-1);
 q.push(0);
@@ -28,4 +35,5 @@ q.push(7);
 q.forEach(console.log);
 console.log(...q);
 ```
-
+## Links
+[GitHub](https://github.com/bin1357/chunked-singly-linked-list), [NPM](https://www.npmjs.com/package/chunked-singly-linked-list)

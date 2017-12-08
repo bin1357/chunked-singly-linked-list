@@ -1,11 +1,3 @@
-
-/*
-     chunk  ->   chunk  ->  chunk
-     ↓↓↓↓↓        ↓↓↓↓↓       ↓↓↓↓↓
-    [__12]  ->  [3456]  ->  [7___]
-       ↑                     ↑
-     head                    tail
-*/
 let MyQueue = require('./index');
 
 // 4 - chunk size;

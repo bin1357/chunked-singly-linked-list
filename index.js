@@ -14,17 +14,17 @@ function Queue(_chunkLength = 1024) {
     this._head.next = this._tail
 }
 
-Queue.prototype[Symbol.iterator] = function* () {
+Queue.prototype[Symbol.iterator] = function*() {
     let a = this._head.next;
     let n = this._head.n;
     while (a !== this._tail) {
-        for(let i = n; i < this._chunkLength; ++i) {
+        for (let i = n; i < this._chunkLength; ++i) {
             yield a.values[i];
         }
         a = a.next;
         n = 0;
     }
-    for(let i = n; i < this._tail.n; ++i) {
+    for (let i = n; i < this._tail.n; ++i) {
         yield a.values[i];
     }
 };
@@ -65,17 +65,17 @@ Queue.prototype.pop = function () {
     return ret;
 };
 
-Queue.prototype.forEach = function(fn) {
+Queue.prototype.forEach = function (fn) {
     let a = this._head.next;
     let n = this._head.n;
     while (a !== this._tail) {
-        for(let i = n; i < this._chunkLength; ++i) {
+        for (let i = n; i < this._chunkLength; ++i) {
             fn(a.values[i]);
         }
         a = a.next;
         n = 0;
     }
-    for(let i = n; i < this._tail.n; ++i) {
+    for (let i = n; i < this._tail.n; ++i) {
         fn(a.values[i]);
     }
     return true;

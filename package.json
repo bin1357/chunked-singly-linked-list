@@ -1,6 +1,6 @@
 {
   "name": "chunked-singly-linked-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chunked single linked list (Queue)",
   "main": "index.js",
   "scripts": {
